@@ -72,8 +72,7 @@ cd google-scholar-scraper
 1. **Visit a Google Scholar profile page**
    ```
    https://scholar.google.com/citations?user=YOUR_USER_ID
-   ```
-   Example: https://scholar.google.com/citations?hl=zh-CN&user=3BLeGSoAAAAJ&view_op=list_works&sortby=pubdate
+
 
 2. **Launch the extension**
    - Click the extension icon 📚 in your browser toolbar
