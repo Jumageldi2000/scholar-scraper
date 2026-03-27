@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Scholar 论文抓取器</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 15px 0;
+      color: #1a73e8;
+    }
+    .status {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      font-size: 14px;
+      display: none;
+    }
+    .status.info {
+      background-color: #e3f2fd;
+      color: #1976d2;
+      border: 1px solid #1976d2;
+    }
+    .status.success {
+      background-color: #e8f5e9;
+      color: #388e3c;
+      border: 1px solid #388e3c;
+    }
+    .status.error {
+      background-color: #ffebee;
+      color: #d32f2f;
+      border: 1px solid #d32f2f;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #1557b0;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .progress {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #666;
+    }
+    .info {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Google Scholar 论文抓取器</h1>
+  
+  <div id="status" class="status"></div>
+  
+  <button id="scrapeBtn">开始抓取论文</button>
+  
+  <div class="progress" id="progress"></div>
+  
+  <div class="info">
+    <strong>使用说明:</strong><br>
+    1. 在Google Scholar个人主页点击此按钮<br>
+    2. 等待抓取完成<br>
+    3. 自动下载CSV文件
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
