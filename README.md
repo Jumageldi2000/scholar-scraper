@@ -27,7 +27,7 @@ A browser extension for batch scraping publication information from Google Schol
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/google-scholar-scraper.git
+git clone https://github.com/Jumageldi2000/google-scholar-scraper.git
 
 # Navigate to the directory
 cd google-scholar-scraper
